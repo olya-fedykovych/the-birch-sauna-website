@@ -1,0 +1,218 @@
+.info {
+    height: 1440px;
+    width: 100vw;
+    background-color: var(--background-secondary);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.saunaImg, 
+.pavilionImg {
+    position: absolute;
+}
+
+.saunaImg {
+    top: 1.6rem;
+    right: 0.5rem;
+}
+
+.pavilionImg {
+    bottom: 1.6rem;
+    left: 0.5rem;
+    z-index: 0;
+}
+
+.saunaDescription, 
+.pavilionDescription {
+    width: 500px;
+}
+
+.saunaDescription {
+    margin-top: 10rem;
+    margin-left: 20vw;
+    position: relative;
+    z-index: 1;
+}
+
+.pavilionDescription {
+    margin-top: 22rem;
+    margin-left: 32rem;
+    position: relative;
+    z-index: 1;
+}
+
+.infoTitle,
+.textBold,
+.bookNow {
+    text-transform: uppercase;
+}
+
+.infoTitle {
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+.textBold {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.textBold, 
+.infoDescriptionSauna,
+.infoDescriptionPav {
+    font-family: var(--font-text);
+}
+
+.infoDescriptionSauna,
+.infoDescriptionPav {
+    font-weight: 200;
+    width: 350px;
+}
+
+.bookNow {
+    background-color: var(--background-button);
+    position: absolute;
+    left: calc(50% - 84px);
+    top: 134.2rem;
+    z-index: 3;
+    text-decoration: none;
+    border: 0.5px solid var(--typography-color);
+    border-radius: 5px;
+    padding: 4px 30px;
+}
+
+.bookNow:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+    transition: ease-out;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+
+    .info {
+        height: 1035px;
+    }
+
+    .saunaImg,
+    .pavilionImg {
+        height: 500px;
+        width: 650px;
+    }
+
+    .saunaDescription {
+        margin-left: 10vw;
+        margin-top: 8rem;
+    }
+
+    .pavilionDescription {
+        position: absolute;
+        right: 5vw;
+        top: 5.5rem;
+        width: 400px;
+    }
+
+    .bookNow {
+        top: 115.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .info {
+        height: 1020px;
+    }
+
+    .saunaImg,
+    .pavilionImg {
+        height: 540px;
+        width: 115vw;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .saunaImg {
+        top: 0rem;
+        left: -2rem;
+    }
+
+    .pavilionImg {
+        left: -2rem;
+        top: 22rem;
+    }
+
+    .saunaDescription,
+    .pavilionDescription {
+        width: 500px;
+    }
+
+    .saunaDescription {
+        position: absolute;
+        top: -3rem;
+        right: -5rem;
+    }
+
+    .pavilionDescription {
+        position: absolute;
+        left: -30rem;
+        top: 7rem;
+        z-index: 2;
+    }
+
+    .infoTitle {
+        font-size: 56px;
+    }
+
+    .bookNow {
+        top: 115.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .info {
+        height: 992px;
+    }
+
+    .saunaImg,
+    .pavilionImg {
+        width: 160vw;
+        height: 590px;
+    }
+
+    .saunaImg {
+        top: -2rem;
+    }
+
+    .pavilionImg {
+        top: 21.5rem;
+    }
+
+    .saunaDescription {
+        left: -1.5rem;
+    }
+
+    .pavilionDescription {
+        width: 300px;
+    }
+
+    .infoTitle {
+        font-size: 42px;
+    }
+
+    .infoDescriptionSauna,
+    .infoDescriptionPav {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    .bookNow {
+        top: 113.8rem;
+    }
+}
+

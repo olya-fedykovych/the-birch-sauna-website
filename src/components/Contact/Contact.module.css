@@ -1,0 +1,87 @@
+.contact {
+    width: 100vw;
+    height: 750px;
+    background: url('/src/assets/woods.png');
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.contactContainer {
+    margin: 8rem auto;
+    width: fit-content;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 4rem
+
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.sectionLeft, 
+.sectionRight {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.contactTitle {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    .textContainer {
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .contactContainer {
+        width: fit-content;
+    }
+    
+    .textContainer {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        
+    }
+
+    .sectionLeft,
+    .sectionRight {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .contactContainer {
+        padding: 2rem 2rem;
+    }
+
+    .textContainer {
+        padding: 0;
+    }
+
+}
+

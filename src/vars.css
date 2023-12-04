@@ -1,0 +1,10 @@
+:root {
+    --background-primary: #26372D;
+    --background-secondary: #1B261F;
+    --background-header: rgba(96, 119, 105, 0.8);
+    --background-footer: #6A7D6E;
+    --background-button: rgba(250, 250, 250, 0.2);
+    --typography-color: #FAFAFA;
+
+    --font-text: 'Raleway', sans-serif;
+}

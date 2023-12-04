@@ -1,0 +1,79 @@
+.booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 980px;
+    width: 100vw;
+    background: url('/src/assets/woods.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.choiceContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.choice {
+    margin-right: 0.5rem;
+    margin-bottom: 11px;
+    accent-color: var(--background-header);
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.choiceLabelSauna {
+    margin-right: 3rem;
+}
+
+.choiceLabelSauna,
+.choiceLabelPavilion {
+    text-transform: uppercase;
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 3rem;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    color: #fafafa;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin-bottom: 2rem;
+}
+
+.bookNow {
+    background-color: rgba(96, 119, 105, 0.6);
+    border: 0.5px solid var(--typography-color);
+    border-radius: 5px;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.bookNow:hover {
+    background-color: var(--background-header);
+    transition: ease-out;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .choiceLabelSauna {
+        margin-right: 2rem;
+    }
+}
