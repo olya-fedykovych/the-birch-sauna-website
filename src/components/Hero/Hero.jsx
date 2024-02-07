@@ -1,11 +1,13 @@
-import styles from './Hero.module.css';
+import { useInView } from 'react-intersection-observer';
+import './Hero.css';
 
 const Hero = () => {
+    const {ref: heroRef, inView: isHeroInView} = useInView();
     return (
-    <section className={styles.hero} id='home'>
-        <div className={styles.heroText}>
-            <h1 className={styles.mainTitle}>saunas. pavilions. nature.</h1>
-            <a href="#sauna" className={styles.heroBtn}>discover more</a>
+    <section className="hero" id='home' ref={heroRef}>
+        <div className={isHeroInView ? "hero-text hero-text-animate" : "hero-text"}>
+            <h1 className="main-title">saunas. pavilions. nature.</h1>
+            <a href="#sauna" className="hero-btn">discover more</a>
         </div>
     </section>
     )

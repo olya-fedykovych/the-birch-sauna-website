@@ -1,0 +1,266 @@
+.info {
+    height: 1440px;
+    width: 100vw;
+    background-color: var(--background-secondary);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+/* .pavilion-container-animate {
+    animation-name: fade-left;
+    animation-duration: 2s;
+} */
+
+.sauna-img, 
+.pavilion-img {
+    position: absolute;
+}
+
+.sauna-img {
+    top: 1.6rem;
+    right: 0.5rem;
+}
+
+.sauna-img-animate {
+    animation-name: fade-right;
+    animation-duration: 2s;
+}
+
+.pavilion-img {
+    bottom: 1.6rem;
+    left: 0.5rem;
+    z-index: 0;
+}
+
+.pavilion-img-animate {
+    animation-name: fade-left;
+    animation-duration: 2s;
+}
+
+.sauna-description, 
+.pavilion-description {
+    width: 500px;
+}
+
+.sauna-description {
+    margin-top: 10rem;
+    margin-left: 20vw;
+    position: relative;
+    z-index: 1;
+}
+
+.sauna-description-animate {
+    animation-name: fade-left;
+    animation-duration: 2s;
+}
+
+.pavilion-description {
+    margin-top: 15rem;
+    margin-left: 32rem;
+    position: relative;
+    z-index: 1;
+}
+
+.pavilion-description-animate {
+    animation-name: fade-right;
+    animation-duration: 2s;
+}
+
+.info-title,
+.text-bold,
+.book-now {
+    text-transform: uppercase;
+}
+
+.info-title {
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: start;
+}
+
+.text-bold {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.text-bold, 
+.info-description-sauna,
+.info-description-pavilion {
+    font-family: var(--font-text);
+}
+
+.info-description-sauna,
+.info-description-pavilion {
+    font-weight: 200;
+    width: 450px;
+}
+
+.book-now {
+    background-color: var(--background-button);
+    position: absolute;
+    left: calc(50% - 84px);
+    top: 134rem;
+    z-index: 3;
+    text-decoration: none;
+    border: 0.5px solid var(--typography-color);
+    border-radius: 5px;
+    padding: 4px 30px;
+}
+
+.book-now:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+    transition: ease-out;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+
+    .info {
+        height: 1035px;
+    }
+
+    .sauna-img,
+    .pavilion-img {
+        height: 500px;
+        width: 650px;
+    }
+
+    .sauna-description {
+        margin-left: 10vw;
+        margin-top: 8rem;
+    }
+
+    .pavilion-description {
+        position: absolute;
+        right: 5vw;
+        top: 9rem;
+        width: 400px;
+    }
+
+    .book-now {
+        top: 115.8rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .info {
+        height: 1020px;
+    }
+
+    .sauna-img,
+    .pavilion-img {
+        height: 540px;
+        width: 115vw;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    .sauna-img {
+        top: 0rem;
+        left: -2rem;
+    }
+
+    .pavilion-img {
+        left: -2rem;
+        top: 22rem;
+    }
+
+    .sauna-description,
+    .pavilion-description {
+        width: 500px;
+    }
+
+    .sauna-description {
+        position: absolute;
+        top: -3rem;
+        right: -1rem;
+    }
+
+    .pavilion-description {
+        position: absolute;
+        left: -30rem;
+        top: 10rem;
+        z-index: 2;
+    }
+
+    .info-title {
+        font-size: 56px;
+    }
+
+    .book-now {
+        top: 115rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .info {
+        height: 992px;
+    }
+
+    .sauna-img,
+    .pavilion-img {
+        width: 160vw;
+        height: 590px;
+    }
+
+    .sauna-img {
+        top: -2rem;
+    }
+
+    .pavilion-img {
+        top: 21.5rem;
+    }
+
+    .sauna-description {
+        left: -1.5rem;
+    }
+
+    .pavilion-description {
+        width: 300px;
+    }
+
+    .info-title {
+        font-size: 42px;
+    }
+
+    .info-description-sauna,
+    .info-description-pavilion {
+        font-size: 18px;
+        width: 280px;
+    }
+
+    .book-now {
+        top: 113.8rem;
+    }
+}
+

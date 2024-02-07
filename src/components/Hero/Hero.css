@@ -1,0 +1,109 @@
+.hero {
+    width: 100vw;
+    height: 780px;
+    background: url('/src/assets/stones.png');
+    object-fit: fill;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-left: 15rem;
+}
+
+.hero-text-animate {
+    animation-name: fade-left;
+    animation-duration: 2s;
+}
+
+.main-title {
+    font-size: 64px;
+    margin-top: 12rem;
+    width: 200px;
+    font-weight: 500;
+}
+
+.hero-btn {
+    background-color: var(--background-button);
+    text-decoration: none;
+    font-size: 24px;
+    border: 1px solid var(--typography-color);
+    border-radius: 5px;
+    width: fit-content;
+    height: fit-content;
+    padding: 4px 20px;
+}
+
+.hero-btn:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+    transition: ease-out;
+    cursor: pointer;
+}
+
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+    
+    .hero {
+        background: url(/src/assets/stonesLaptop.png);
+        background-size: 100%;
+    }
+
+    .hero-text {
+        margin-left: 10rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background: url(/src/assets/stonesIpad.png);
+    }
+
+    .hero-text {
+        margin-left: 5rem;
+    }
+
+    .main-title {
+        margin-top: 12rem;
+        font-size: 54px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .hero {
+        overflow-x: hidden;
+        background: url(/src/assets/stonesMobile.png);
+        background-repeat: no-repeat;
+        background-size: 130% 100%;
+    }
+
+    .hero-text {
+        margin-left: 3rem;
+        gap: 1rem;
+    }
+
+    .main-title {
+        font-size: 42px;
+        margin-top: 12rem;
+    }
+
+    .hero-btn {
+        font-size: 20px;
+    }
+}
