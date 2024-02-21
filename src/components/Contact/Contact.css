@@ -1,6 +1,6 @@
 .contact {
     width: 100vw;
-    height: 750px;
+    height: 100vh;
     background: url('/src/assets/woods.png');
     background-repeat: no-repeat;
     position: relative;
@@ -60,6 +60,10 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media screen and (min-width: 1440px) {
+    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {

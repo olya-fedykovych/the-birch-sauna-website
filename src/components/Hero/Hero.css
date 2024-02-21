@@ -1,8 +1,9 @@
 .hero {
     width: 100vw;
-    height: 780px;
+    height: 100vh;
     background: url('/src/assets/stones.png');
-    object-fit: fill;
+    object-fit: cover;
+    background-position: right;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-transform: uppercase;
@@ -25,7 +26,7 @@
 
 .main-title {
     font-size: 64px;
-    margin-top: 12rem;
+    margin-top: 10rem;
     width: 200px;
     font-weight: 500;
 }
@@ -58,11 +59,21 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+
+    .main-title {
+        font-size: 84px;
+    }
+
+    .hero-btn {
+        font-size: 36px;
+    }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
     
     .hero {
-        background: url(/src/assets/stonesLaptop.png);
-        background-size: 100%;
+        background-size: 125% 100%;
     }
 
     .hero-text {

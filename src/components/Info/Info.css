@@ -7,12 +7,6 @@
     overflow: hidden;
 }
 
-
-/* .pavilion-container-animate {
-    animation-name: fade-left;
-    animation-duration: 2s;
-} */
-
 .sauna-img, 
 .pavilion-img {
     position: absolute;
@@ -138,6 +132,17 @@
     }
 }
 
+@media screen and (min-width: 1440px) {
+    .info {
+        height: 1640px;
+    }
+
+    .sauna-img,
+    .pavilion-img {
+        height: 800px;
+        width: 1200px;
+    }
+}
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
 
