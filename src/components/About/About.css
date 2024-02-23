@@ -4,22 +4,22 @@
     height: 100vh;
 }
 
-.aboutContainer {
+.about-container {
     position: relative;
     overflow: hidden;
 }
 
-.flowerLeft,
-.flowerRight {
+.flower-left,
+.flower-right {
     position: absolute;
 }
 
-.flowerLeft {
+.flower-left {
     top: -6rem;
     z-index: 0;
 }
 
-.flowerRight {
+.flower-right {
     top: 25rem;
     right: 0;
     z-index: 1;
@@ -29,7 +29,7 @@
     font-size: 48px;
     font-style: italic;
     font-weight: 300;
-    margin: 12rem  auto;
+    margin: 13rem  auto;
     width: 80%;
 }
 
@@ -38,7 +38,7 @@
     animation-duration: 3s;
 }
 
-.textHighlighted {
+.text-highlighted {
     font-size: 48px;
     font-weight: 600;
     text-decoration: underline;
@@ -57,9 +57,28 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
     .slogan {
-        font-size: 64px;
+        font-size: 68px;
+        margin-top: 21rem;
+    }
+
+    .text-highlighted {
+        font-size: 68px;
+    }
+
+    .flower-left,
+    .flower-right {
+        height: 534px;
+        width: 511px;
+    }
+
+    .flower-left {
+        top: -10rem;
+    }
+
+    .flower-right {
+        top: 32rem;
     }
 }
 
@@ -78,7 +97,7 @@
         margin-top: 12rem;
     }
 
-    .textHighlighted {
+    .text-highlighted {
         font-size: 42px;
     }
 
@@ -91,11 +110,11 @@
         margin-top: 11rem;
     }
 
-    .textHighlighted {
+    .text-highlighted {
         font-size: 36px;
     }
 
-    .flowerRight {
+    .flowerright {
         top: 26rem;
     }
 }

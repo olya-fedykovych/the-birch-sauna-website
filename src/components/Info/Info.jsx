@@ -2,7 +2,6 @@ import { useInView } from 'react-intersection-observer';
 import sauna from '../../assets/sauna.png';
 import pavilion from '../../assets/pavilion.png';
 import './Info.css';
-import Button from './Button';
 
 const Info = () => {
     const {ref: saunaRef, inView: isSaunaInView} = useInView();

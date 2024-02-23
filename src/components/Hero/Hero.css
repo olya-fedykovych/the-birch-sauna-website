@@ -26,7 +26,7 @@
 
 .main-title {
     font-size: 64px;
-    margin-top: 10rem;
+    margin-top: 12rem;
     width: 200px;
     font-weight: 500;
 }
@@ -59,10 +59,11 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
 
     .main-title {
         font-size: 84px;
+        margin-top: 15rem;
     }
 
     .hero-btn {

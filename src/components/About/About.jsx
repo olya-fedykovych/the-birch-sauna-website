@@ -7,11 +7,11 @@ const About = () => {
     const {ref: aboutRef, inView: isAboutInView} = useInView();
     return (
     <section  className="about" id='about'>
-        <div ref={aboutRef}  className="aboutContainer">
-            <img src={flowerLeft} className="flowerLeft" alt="flower-outline" />
-            <img src={flowerRight} className="flowerRight" alt="flower-outline" />
-            <h3 className={isAboutInView ? "slogan slogan-animate" : "slogan"}>Relax and unwind among hot steam and acerose scents in our <span className="textHighlighted">sauna</span>.
-                Gather with your loved ones among nature in our <span className="textHighlighted">pavilions</span>.
+        <div ref={aboutRef}  className="about-container">
+            <img src={flowerLeft} className="flower-left" alt="flower-outline" />
+            <img src={flowerRight} className="flower-right" alt="flower-outline" />
+            <h3 className={isAboutInView ? "slogan slogan-animate" : "slogan"}>Relax and unwind among hot steam and acerose scents in our <span className="text-highlighted">sauna</span>.
+                Gather with your loved ones among nature in our <span className="text-highlighted">pavilions</span>.
             </h3>
         </div>
     </section>
