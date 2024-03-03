@@ -57,7 +57,28 @@
     }
 }
 
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1921px) {
+    .slogan {
+        font-size: 78px;
+        margin: 27rem auto;
+    }
+
+    .text-highlighted {
+        font-size: 68px;
+    }
+
+    .flower-left,
+    .flower-right {
+        height: 534px;
+        width: 511px;
+    }
+
+    .flower-right {
+        top: 40rem;
+    }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
     .slogan {
         font-size: 68px;
         margin-top: 21rem;

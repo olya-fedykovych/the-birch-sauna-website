@@ -1,6 +1,6 @@
 .confirmation {
     width: 100vw;
-    height: 980px;
+    height: 100vh;
     background: url('/src/assets/woods.png');
     background-repeat: no-repeat;
     overflow: hidden;
@@ -18,20 +18,20 @@
     margin: 8rem auto;
 }
 
-.confirmationTitle {
+.confirmation-title {
     font-size: 42px;
     text-transform: uppercase;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.confirmationText {
+.confirmation-text {
     font-size: 28px;
     margin-bottom: 0.5rem;
     text-align: center;
 }
 
-.heroBtn {
+.hero-btn {
     background-color: var(--background-button);
     text-decoration: none;
     font-size: 24px;
@@ -44,7 +44,7 @@
     margin-top: 2rem;
 }
 
-.heroBtn:hover {
+.hero-btn:hover {
     background-color: rgba(250, 250, 250, 0.3);
     transition: ease-out;
     cursor: pointer;
@@ -59,22 +59,22 @@
 
 @media screen and (max-width: 768px) {
 
-    .confirmationTitle {
+    .confirmation-title {
         font-size: 36px;
     }
 }
 
 @media screen and (max-width: 500px) {
 
-    .confirmationTitle {
+    .confirmation-title {
         font-size: 32px;
     }
 
-    .confirmationText {
+    .confirmation-text {
         font-size: 22px;
     }
 
-    .heroBtn {
+    .hero-btn {
         font-size: 20px;
         padding: 4px 15px;
     }

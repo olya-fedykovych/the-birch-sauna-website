@@ -1,4 +1,4 @@
-.formInput{
+.form-input{
     display: flex;
     flex-direction: column;
     width: 360px;
@@ -57,7 +57,7 @@ input::placeholder {
 
 @media screen and (max-width: 768px) {
 
-    .formInput {
+    .form-input {
         width: 330px;
     }
 
@@ -65,7 +65,7 @@ input::placeholder {
 
 @media screen and (max-width: 500px) {
 
-    .formInput {
+    .form-input {
         width: 280px;
     }
 }

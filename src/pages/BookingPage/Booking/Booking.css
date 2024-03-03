@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 980px;
+    height: 110vh;
     width: 100vw;
     background: url('/src/assets/woods.png');
     background-repeat: no-repeat;
@@ -10,7 +10,7 @@
     overflow: hidden;
 }
 
-.choiceContainer {
+.choice-container {
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,16 +26,16 @@
     width: 0.8rem;
 }
 
-.choiceLabelSauna {
+.choice-label-sauna {
     margin-right: 3rem;
 }
 
-.choiceLabelSauna,
-.choiceLabelPavilion {
+.choice-label-sauna,
+.choice-label-pavilion {
     text-transform: uppercase;
 }
 
-form{
+form {
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 3rem;
     padding: 1rem 4rem;
@@ -45,7 +45,7 @@ form{
     align-items: center;
 }
 
-h2{
+h2 {
     color: #fafafa;
     text-align: center;
     text-transform: uppercase;
@@ -53,7 +53,7 @@ h2{
     margin-bottom: 2rem;
 }
 
-.bookNow {
+.book-now {
     background-color: rgba(96, 119, 105, 0.6);
     border: 0.5px solid var(--typography-color);
     border-radius: 5px;
@@ -65,7 +65,7 @@ h2{
     cursor: pointer;
 }
 
-.bookNow:hover {
+.book-now:hover {
     background-color: var(--background-header);
     transition: ease-out;
 }
@@ -73,7 +73,7 @@ h2{
 
 @media screen and (max-width: 500px) {
 
-    .choiceLabelSauna {
+    .choice-label-sauna {
         margin-right: 2rem;
     }
 }

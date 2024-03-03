@@ -75,12 +75,12 @@ const Booking = () => {
                 <form onSubmit={handleSubmit}>
                     <h2>Book</h2>
 
-                    <div className="choiceContainer">
+                    <div className="choice-container">
                     <input type="radio" className="choice" name="choice" checked/>
-                    <label className="choiceLabelSauna">Sauna</label>
+                    <label className="choice-label-sauna">Sauna</label>
                         
                     <input type="radio" className="choice" name="choice"/>
-                    <label className="choiceLabelPavilion">Pavilion</label>
+                    <label className="choice-label-pavilion">Pavilion</label>
                     </div>
 
                     {inputs.map((input) => (
@@ -93,7 +93,7 @@ const Booking = () => {
                         
                         />
                     ))}
-                    <button className="bookNow">book now</button>
+                    <button className="book-now">book now</button>
                 </form>
             </div>
             <Footer />

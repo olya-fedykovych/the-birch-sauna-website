@@ -10,7 +10,7 @@ const Input = (props) => {
     };
 
     return (
-    <div className="formInput">
+    <div className="form-input">
         <label>{label}</label>
         <input
             {...inputProps}
